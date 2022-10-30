@@ -1,0 +1,8 @@
+Question: running the program 4 different times
+
+Passing arguments in a program run:
+java ProgramName without the .class then arguments in " "
+
+How to use a debugger?
+
+The project name should be lowercase

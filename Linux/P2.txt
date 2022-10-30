@@ -1,0 +1,69 @@
+WORKING WITH PERMISSIONS
+------------------------
+- 3 groups of users: user(rwx), group(rwx), others(rwx):someone else eg: like a browser, someone is accessing the web files without being logged in to that server
+- 3 groups of permissions: rwx
+
+- read a dir: ls into it
+- write: add into
+- execute: run a file or cd into dir
+
+- chmod: change permission
+- dot(.): current directory
+- dot dot (..): the dir above
+
+- ls -lrta: long listing, reversing order based on the time, show all the files with hidden i.e. similar to ls -l -r -t -a
+
+- cd -: go back to dir i was in (previous one)
+- when no x permission: ls: returns nothing, cd: returns permission is denied
+
+QUESTION
+--------
+doesn't these commands all allows the owner write and execute?
+-chmod 321 
+-chmod 333
+
+to run your shell scripts, you need to change the permission
+
+
+FILE METACHARACTERS (File globbing)
+-------------------
+
+- Metacharacters are used to match file names
+- While Regex match characters inside strings or contents of file
+
+- [!c]: matches single char that is not 'c'
+- using chars without their special meaning: Escape them by using '' or \
+- "" and `` doesn't escape special meaning of characters
+- `` is used to process the commands inside a text or inside ""
+
+QUESTION
+--------
+?? Match five*hotels
+
+- ls [a-z]??[a-e]\*hotels: True
+- ls five*[a-z]??els: False because the star is not escaped!
+
+- ls -d ???* : -d treat dir like file, Allows to prevent listing things inside directories
+- The command above lists all files have names with 3 chars or more
+
+Completion:
+- tab
+- * tab : ???
+
+PIPES AND REDIRECTION
+---------------------
+- Pipe: redirects cmd output to another cmd
+ls -lrt | wc -l : long listing, reverse time then count nbr of lines
+
+- > : redirects cmd output to a file, by overwriting what is inside
+- >> : redirects to a file and append it to a file
+- < : redirect input to cmd so it comes from a file instead from keyboard
+eg: grep "rwx" < lsout is similar to cat lsout | grep "rwx"
+
+Home directory of logged in user
+--------------------------------
+- echo $HOME
+- echo ~/
+
+stdin: keyboard
+stdout: screen

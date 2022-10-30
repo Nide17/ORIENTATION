@@ -1,0 +1,37 @@
+CODING A CLASS
+--------------
+- Helper class: class you write to use it in other classes and do its job
+- When you write your own class, you first declare it.
+- call constructor with new keyword.
+- dot notation: used to call generic method on the object; but inside a method
+- calling another method in the same class, you don't need the dot, just call the method. 
+- DEFAULT CONSTRUCTOR: takes no argument and is used to set instance variables to their default values
+- you don't call a class, you use it. you instantiate it to use it.
+- when the program has a main method, it is an application. to run it use java then the name without .class
+- null: reference is not set. doesn't reference to anything
+- Class.method(): Class dot method means the method has to be static because when the method is static, we always call it by using the class name.
+- Don't shadow your variables!!!!!!!!!!!!!!!!?????????? 
+- shadowing: If a local variable or parameter in a method has the same name as a field (variable) of the class, the field is hidden until the block terminates
+execution
+- To access a shadowed field in a block:
+	- If the field is an instance variable, precede its name with the this keyword and a dot (.), as in this.x.
+	- If the field is a static class variable, precede its name with the class’s name and a dot (.), as in ClassName.x.
+
+- It is good practice to rename the varibales instead of using the this keyword.
+
+- All objects in Java have a special method named toString that returns a String representation of the object’s contents. 
+- When an object is concatenated with a String, the JVM implicitly calls the object’s toString method to obtain the string representation of the object.
+- Helps to get the string representation of the object. To format the output how you want it to look like.
+- If not toString () is not used, it just prints what the reference holds.
+- Reference: is the address of where the variable is stored in the memory.
+
+- System.out.println(classObject); Printing the object of the class invokes the toString() method which returns a string to be printed on the standard output
+
+- Garbage collection: Java release the memory of data whose jobs are already done. free the memory. in c and c++ we have to release them manually.???
+- Primitive data types stores values in the memory. if we change the value, the memory remain unused and has to be cleared by GC.
+- Reference data types like objects, stores the reference of the memory location
+
+- Getters and Setters are provided for being able to access private members outside the class. ??????????
+
+
+

@@ -1,0 +1,18 @@
+Instantiation DOESN'T ALWAYS NEED DECLARATION
+Declaration: asking for memory in JVM
+INITIALIZATION: Store the reference to the memory
+
+- Strongly typed: first tell the compiler what type of the variable
+- Method: what do you expect from it when you are using or defining it? what is given back after finishing the task?
+- Overloading: same method with different args: buying with cash next time with a credit card.
+- Overriding: when it comes to relationships with other classes
+- Signature: structure of the method: return type, name, args
+- Constructor: There is always a default constructor, provided automatically by the java compiler when you didn't define one. 
+- Static class: we don't need to create an object because static doesn't change
+- dot notation: used to access the members of an object.
+- encapsulation: binding together the content of a class. hiding the behaviors of the class inside it. accessing those behaviors without knowing how they are made.
+eg: capsule pill: we use it without knowing what is inside.
+- it uses access specifiers
+- to access them we use getters and setters
+- Null: when you declare a var without assigning a value: it points to null (box in memory with nothing in it). 
+eg: students who were sick during the exam, don't get zero but empty marks.

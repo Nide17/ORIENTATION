@@ -1,0 +1,11 @@
+if [ expression ]
+then
+    command
+elif [ expression ]
+then
+    command
+fi
+
+
+---------------
+read: read the input

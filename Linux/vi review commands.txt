@@ -1,0 +1,10 @@
+:s/foo/bar/ search foo and replace by bar
+:%s/foo/bar/g  used to search foo and replace by bar in entire file
+
+- J: Joins two lines in cmd mode
+- r: replace current letter
+- o: line below
+- O: line above
+- w: move cursor to the next word
+- d: delete letter
+- dw: delete word

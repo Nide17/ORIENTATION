@@ -1,0 +1,31 @@
+- A method belongs to a particular class and performs a particular task with a grouping of code. It may have arguments and may return an answer. 
+
+- Note: in non-Object-Oriented languages, you can also write a function, which is the grouping of code like a method, but it does not belong to a class. Sometimes we use the words interchangeably, but technically they are different. And sometimes we use the word procedure, although in some languages it is technically different also.
+
+- A BLOCK of code refers to those statements within a set of curly braces ({}). 
+
+- MODULAR CONTROL refers to a program that executes primarily as method calls. 
+
+- The DOMAIN of a function refers to arguments with the proper values, not just the correct datatype/class.
+
+- ARGUMENTS allow the calling function to pass values to the called function. 
+
+- A METHOD SIGNATURE specifies the method name, the method's return type, the number of arguments it expects, and the datatypes for those arguments.
+
+- A method's return type can be a class or primitive data type. It should match the type of data that the function returns. 
+
+- The term argument refers to the information that the calling procedure passes to the called method.
+
+- The term parameter refers to the information that the called method receives from the calling function. 
+
+- ARGUMENTS: to be passed by calling function. call.
+- PARAMETERS: to be received from the calling function (expects) placeholder: decl.
+
+- pass-by-value: a copy of the primitive argument is passed, and the value of the object used as the argument cannot be changed.
+- pass-by-reference: When an object is passed to the method, the reference is passed. The object can be changed inside the called method.
+
+- A method in your application (with main()) should be static. No other methods should be static unless I tell you to make them static.
+
+- When do you decide that you need a method?
+	- if you have a lot of details
+	- if the idea of the function seems reusable. 

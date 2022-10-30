@@ -1,0 +1,10 @@
+Source file: text file
+java: files end in .java
+applet: java app that runs in browser HTML
+
+<applet code="*.class" width="" height=""></applet>
+- applet doesn't have a main() function
+- everything is a class in java
+- signature = public static void ....
+- Java is strongly typed lang: declare var and say its datatype
+- Classes start with a capital letter, primitive: lowercase

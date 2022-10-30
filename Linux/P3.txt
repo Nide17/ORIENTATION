@@ -1,0 +1,74 @@
+REGULAR EXPRESSIONS
+-------------------
+- They are used by commands(grep, sed, vi) that process the content of files
+- grep: get regular expression: displays lines of file matching a specified regex
+- sed: stream editor: used to filter the input based on regex
+- vi: visual editor: text file editor, let's you edit a file with cmds based on regex.
+- sed: It is used to filter and transforming texts
+- sed -e: edit mode
+- sed -e 's/regexp/replacement/' : substitute
+
+REGEX: CONTENTS OF FILES							  METACHARCTERS: FILE NAMES
+- * zero or more of the previous character or of the given char	 | * matches zero or more of any character
+- . exactly one character of any type except n			       | ? matches exactly one character of any type
+- [] chars listed in here, or in the range
+- [^c]: any char that is not c						 | [!c] any char that is not c
+- ^ matches the beginning of a line (when not in paranthesis) 
+- $ matches the end of the line
+- .* zero or more of any of the previous char
+
+- NB: Metacharacters match filenames while Regex matches strings inside the files.
+- Metacharacters matches from the beginning but regex matches from anywhere in text.
+
+eg: - grep "^abc" $HOME/??  : search for these characters(abc) inside a file, at the beginning of the line, in files that have only 2 chars in their names.
+	- grep [Ss] dirtree/sdira/ssdir/sbd1/file* : search inside file, for upper or lower case s in all files in that directory that have their names starting with "file".
+	- ls -lrt | sed -e 's/.*[ 	]//' : Long listing reverse depending on time, piping in sed with flag e that means editing, s: substitute, .* zero or more of any of the previous char, followed by anything inside the blackets(space and tab), replace it with what is btn slashes which is nothing, ie replace them.
+- That last means replacing spaces and tabs inside the coutput of ls
+
+- Pipe takes the output from one cmd and make it input to another cmd
+
+Escape special characters:
+--------------------------
+grep * file1: expand the list of the files with file1 last, the search the first arg through all others from the list
+grep '*' file1: search for * inside the content of file1
+grep \* file1: search for * inside the content of file1
+grep '\*' file1: search for * inside the content of file1
+grep \* file?: search for * inside the content of files whose names starts with file
+grep '^\*' file?: search for every line that starts with the * in all the files starting with file
+grep '\*$' file?: search for every line that ends with the * in all the files starting with file
+grep '^\**$' file1: find for a full line with stars in it
+grep '^.*' file1: find every line in a file that has zero or more chars in it.
+- . means any character
+- * zero or more of previous character
+- grep -v pattern: search non containing
+
+grep '[a-f]' file1: find everything that has a to f in file ending in other one letter
+
+
+--------------------------------------------------------------------
+REGEX EXAMPLES
+--------------
+- .* :matches 0 or more of any character
+- f*: matches zero or more fs: zero or more of previous char NB: it matches also when f is not there
+- ff[^a-d]: matches 2 fs followed by any char that is not btn a-d
+- ^ff*[a-d^+]: matches an f at the beginning of line, followed by 0 or more fs followed by any char btn a and d, or the caret(^) or a plus (+)
+- When caret (^) is used inside the blackets, at the beginning, it means "not"
+- When caret (^) is at the beginning outside the blackets, it means matches the following letter at the beginning of a line
+- When it is in between, it has no meaning; it's a caret. 
+- ^$ : blank line
+- [Ff][a-d]: matches F or f followed by any char btn a and d. anywhere in the string
+
+
+BINARY AND HEX
+--------------
+0x019AF:
+0x indicates its hex nbr
+- Binary to hex: divide bin into groups of 4, then dec to hex
+
+CUT
+---
+- Displays the columns of data from a file
+- 1. -c flag cuts based on column nbr
+- 2. -f flag cuts based on fields delimited by a tab, used -d flag to set the delimiter
+
+eg: ls -l | cut -f2,5,6 -d ' ' : show only field 2,5,6 delimit with space

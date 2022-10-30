@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Under `pwd`:"
+echo "a) You have `find -type d | wc -l` sub-directories."
+echo "b) You have `ls -l | grep "\-rw-r--r--" | wc -l` regular files whose permission is 644"
+echo "c) You have these empty files:
+`find -type f -empty`"
+echo "d) You accessed these files since yesterday:
+`find -atime -1`"
+echo "e) Following hidden files have a size between 1kb and 10Mb:
+`find -iname ".*" -size +$((1*1024))c -size -$((10*1024*1024))c`"

@@ -1,0 +1,129 @@
+Practice Cmds 1
+Using the files under dirtree from the tar file downloaded (and best if you do it after competing Practice Paths 2), answer the following questions. Also describe the techniques and commands you used to determine the answers (so each questions has 2 answers):
+
+   1. What file(s) tell you about water?
+
+dirtree/sdira/ssdir2/sbd2/file22:The ocean is a body of water.
+dirtree/sdira/ssdir2/sbd2/file22:A river is running water.
+dirtree/sdira/ssdir2/sbd2/file22:A lake is fresh water.
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA3:Tears are also salt-water.
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA3:The human body is about 60% wate
+ - true or false?
+dirtree/sdirb/ssdir4/sbdir4/sbd4/fileB4:Do make sure to drink plenty of water, especially when doing sport!
+dirtree/sdirb/ssdir4/sbdir4/sbd4/fileB4:The sea is salt-water.
+---------------------------------------
+
+-grep -ir 'water' dirtree: searches recursively ignoring case inside dirtree
+
+
+   2. What file(s) tell you about colors?
+
+dirtree/sdira/ssdir2/sbd2/file2:The color of the sky is orange at sunset.
+dirtree/sdira/ssdir2/sbd2/file2:cathy's favorite Color is blue.
+---------------------------------------
+grep -ir 'color' dirtree/
+
+
+    3. What is Cathy's favorite color?
+blue
+-----
+grep -ir 'cathy' dirtree/
+
+    4. What file(s) tell you about your CMU-Africa?
+
+dirtree/sdira/ssdir1/sbd1/file1:Welcome Class of 2024 to CMU-Africa!
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA1:Bruce Krogh was the first Director of CMU-Africa.
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA1:When it first opened, CMU-Africa was call Carnegie-Mellon Rwanda.
+dirtree/sdirb/ssdir4/sbdir4/sbd4/fileB1:Is this still used at CMU-Africa?: Speak up so everyone can hear what you are saying, or you will get "bing"ed.
+------------------------------------------
+grep -ir 'CMU-Africa' dirtree/
+
+
+    5. How many different colors are mentioned in the files?
+Two
+---------
+grep -ir 'color' dirtree/
+
+    6. How many types of water are mentioned in the files?
+
+Four: Ocean, river, lake, sea
+------------------
+-grep -ir 'water' dirtree
+
+    7. Show the lines from all the files under dirtree/sdirb/ssdir3/sbdir3/sbd3/ that have a c.
+
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA1:1:Bruce Krogh was the first Director of
+MU-Africa.
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA1:2:When it first opened, CMU-Africa was call Carnegie-Mellon Rwanda.
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA4:1:Carnegie Mellon University Africa was established in 2011.
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA4:2:The first graduating class was in 2013.
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA4:3:The campus at the Kigali Innovation Center was opened starting for Orientation in August of 2019.
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA2:1:Don't ever copy code! Not from another student, a TA, or a graduate, and never from the Internet!
+---------------------------------
+grep -inr 'c' dirtree/sdirb/ssdir3/sbdir3/sbd3
+
+    8. How many files under the dirtree directory have a capital letter in their name?
+
+Eight
+----------
+find dirtree/ -name "*[A-Z]*" | sort -u | wc -l
+
+    9. How many files in the dirtree/sdirb/ssdir4/sbdir4/sbd4/ directory contain a capital letter?
+
+Eleven
+----------
+grep -r [A-Z] dirtree/ | cut -f1 -d: | sort -u | wc -l
+
+    10. What files in dirtree/sdirb/ssdir3/sbdir3/sbd3/ contain an f or an F. Give the command to run from the dirtree directory (in other words, cd to dirtree and run it from there).
+
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA1
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA1
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA4
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA4
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA4
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA3
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA2
+-------------------
+ grep -r [Ff] dirtree/sdirb/ssdir3/sbdir3/sbd3/ | cut -f1 -d:
+
+
+11. How many files are in / (the root directory)?
+	Twenty-eight
+----------------
+ls -al / | wc -l
+
+12. What are the regular files (i.e. not directories) under dirtree?
+
+dirtree/sdira/ssdir1/sbd1/file2
+dirtree/sdira/ssdir1/sbd1/file1
+dirtree/sdira/ssdir2/sbd2/file2
+dirtree/sdira/ssdir2/sbd2/file22
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA1
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA4
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA3
+dirtree/sdirb/ssdir3/sbdir3/sbd3/fileA2
+dirtree/sdirb/ssdir4/sbdir4/sbd4/fileB1
+dirtree/sdirb/ssdir4/sbdir4/sbd4/fileB2
+dirtree/sdirb/ssdir4/sbdir4/sbd4/fileB3
+dirtree/sdirb/ssdir4/sbdir4/sbd4/fileB4
+-------------------------
+ find dirtree/ -name "*" -type f
+
+13. How many directories are under dirtree?
+
+Thirteen
+-----------------------------
+find dirtree/ -name "*" -type d | wc -l
+
+14. What does this command give you (explain in English too):
+
+    ls -R dirtree | grep -v : | sort -u
+    Super tricky ... try it. What is does this command do? Note: it is on one line, even if HTML is formatting it on two.
+
+- list recursively the dirtree, from results select non matching then sort unique results only
+
+
+    ls -R dirtree | sed -e 's/.*\///g' -e 's/://' | sort -u
+- list recursively the dirtree contents, from results then subsitute any backslash that follows 0 or more characters with a forward slash globally then substitute colon with nothing, sort only unique names
+
+Hint: For the complicated ones, try each part separately first. So do the first part, up to the pipe. Then add up to the next pipe, ...

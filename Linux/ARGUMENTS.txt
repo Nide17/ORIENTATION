@@ -1,0 +1,9 @@
+ARGUMENTS
+---------
+:!%  Running the current file in vi
+- $0 is the command, $1 first arg, $2 second ...
+- search in vi: /pattern, cw: change word + write it, press n for next occurrence
+- cut in vi: move the cursor to the beginning of the line, then dd; paste with p
+- in vi; repeats the last find(f)
+- when we run bash with a command, it looks first in set paths(eg::/home/parmenin/cmd) to run the command given
+- to run the previous command use:!!

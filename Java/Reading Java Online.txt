@@ -1,0 +1,27 @@
+Reading Online Documentation
+----------------------------
+1. Oracle java documentation
+- Point class
+- point represent location in x and y coordinate space: pixel locations on screen 
+- class: is a data type
+- java.awt is a package
+- include copy all files while import do not. 
+- class hierarchy: java.awt.Point
+
+- constructor: methods with name matching class name
+- default constructor: it has no argument: pick default value stored in object or class
+eg: Point()  => starts at (0,0)
+- call a constructor with "new"
+- java doesn't have pointers, it has references
+- declaring: Point p1; Point p2, p3;  == drawing memory
+- constructing object: p1 = new Point() == pointing to the memory
+- p2 = new Point(12,15)
+- p3 = new Point(p1) == p1 and new p1 are different: different memories p1 and p3
+if p1 changes p3 doesn't even though p3 constructed from p1
+
+- Signature: tells you the name of method, arguments, and return type if it is not a constructor.
+- dot notation: to access the method of the object
+- encapsulation: all the behaviors for point are inside the class
+- method overloading: methods with same name but different args
+- strongly typed lang: 
+- toString: always called automatically

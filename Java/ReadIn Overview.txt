@@ -1,0 +1,22 @@
+import java.io.*; // let's have access to all files in the i.o package
+
+-main(): indicates that it is an application
+- public
+- static: means there is only one. eg only one method, to call it we don't need an object, just use the class name
+- String [] args: an array of arguments
+- statement: codes that end in ;
+- int: primitive data type, Integer: class data type
+
+
+HW10
+----
+
+3 calls to the method
+---------------------
+Class method -> static = class.
+regular method = obj.
+constructor = new
+
+PFUN: Start up + interview questions
+DSA: interview + Deep
+DPSD: OO + Smartphones

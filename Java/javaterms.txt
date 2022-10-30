@@ -1,0 +1,10 @@
+Java Terms
+----------
+
+1. Encapsulation: This is a concept that says that all the details and behaviors of a class are kept intact or hidden inside that class. This means that you cannot access them directly.
+2. Null: This means that there is nothing in existence at all.
+3. Default constructor: This is a method called when the object is first instantiated, but it has no arguments. In some cases when it is not defined, java can provide one.
+4. Signature of a method: It is a structure showing the name, arguments, and return type of a method.
+5. Dot notation: it is a structure used to access the members of an object.
+6. Strongly typed language: It means that in java when you use any variable, first tell the compiler what its type before using it.
+7. Method overloading: This is a concept where you have various methods with the same name, and same behaviors but performing similar tasks.

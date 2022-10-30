@@ -1,0 +1,7 @@
+STEPS
+-----
+- Declare: TestScore tests[] = null;
+- Allocate slots in the array: tests = new TestScores[5]
+- Allocate elements in the array: tests[0] = new TestScore(19,20)
+
+- Data type: array of TestScore

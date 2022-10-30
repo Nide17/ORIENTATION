@@ -1,0 +1,52 @@
+- Algorithm: the set of steps used to solve a problem
+- Algorithms are written in outline format
+
+Heading1 (functions or methods)
+   1. details
+   2. details
+Heading2
+   1. details
+Heading
+   1. details
+   2. details
+   3. more details
+
+IPO
+---
+INPUT
+ - Get 2 numbers from the user
+   1. prompt for 1st number and store it
+
+PROCESS
+ - Determine which number is bigger
+   - Perform calculations
+
+OUTPUT
+ - Print the answer to the screen
+
+Magic
+-----
+0. Start by displaying 6 cards
+1. Look at the cards
+2. Memorize just one
+3. Next
+4. Display 5 cards that don't include any from the previous 5 cards!
+5. End
+
+solution: 
+Screenshot: Magic
+
+
+Ballon
+------
+
+1. Prepare a balloon
+  - select a balloon to blow
+  - stretch to inspect if it is okay
+  - hold the balloon's neck 
+
+2. Fill it with air
+  - Put its neck into your mouth and 
+  - Put the air from your mouth inside the balloon while holding the neck tighter
+  - Repeat the above step until the balloon is filled as you want.
+  - Then tighten and close the neck to prevent air to flow from the balloon

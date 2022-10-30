@@ -1,0 +1,30 @@
+- Shell script is a file containing commands to be executed
+- If you are going to sh the script, you don't need the execute permission but read is needed
+- If you are going to execute the script, read & execute perm are not needed
+- sh is interpret language: reads code line by line and executes it, stops when meeting error but the previous are executed
+- sh the scripts: running the name of the file
+- bash command required read permission because is interpreting the scripts
+- running the script requires executing perm, but using sh x perm is not needed
+
+SETTING PROFILE(PATH)
+---------------------
+- Profile is a shell script and it automatically run when you log in
+- All hidden files starts with . eg: .profile
+- PATH=":$HOME/cmd:$PATH"  : All cmd put in cmd dir while be run wherever u are
+- Setting path, makes the scripts you write in cmd directory show up in your path.
+- .profile is a shell script run every time you log in
+- set -o vi  :  set your command line editor to be vi
+
+- If you vi to be command line editor, you can use cmd as vi after pressing esc
+
+PATH=":$HOME/cmd:$PATH" look into the home directory cmd otherwise look into the rest of my path
+
+SHELL SCRIPTS TIPS
+------------------
+- Inside vi, % means the current file
+- To run the
+
+
+dirinfo
+-------
+- one cmd for each line of output : piping

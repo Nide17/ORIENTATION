@@ -1,0 +1,13 @@
+1. instantiate an object
+2. we need to create a new object for every instance object.
+3. every method in java must have a return type!
+
+- Create an object: M m = new M("Nide");
+- Call constructor only: new M("Nide");
+
+4. Whatever inside double quotes is a string
+5. Application or program has always been the main method.
+6. When we call a method inside main in the same class, no need for class or object.
+
+7. String type = new String("Hello");
+same as String type = "Hello";

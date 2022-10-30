@@ -1,0 +1,12 @@
+BULLSEYEAPPLET CODE
+-------------------
+Instance variables: Variables that are needed in a number of methods should be created as instance variables.
+- (Graphics g) : g represents the area to draw in the graphiscs
+- We don't need dot notation when calling a method inside another that belongs to the same class.
+
+A=10
+B=11
+C=12
+D=13
+E=14
+F=15

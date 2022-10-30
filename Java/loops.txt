@@ -1,0 +1,34 @@
+LOOPS
+------
+1. Executes 10 times
+2. Executes 10 times
+3. Executes 10 times
+4. Executes 21 times
+5. Infinite loop
+6. Executes 11 times
+7. Executes 7 times
+------------------------------------------------------
+
+1. FOR: Counting loop! used to repeat code certain times
+-> Eat ten crisps one by one -> eat them until 10, then stop
+2. Repeat code until a particular condition changes.
+-> Eat them until the bag of crisps finishes
+
+FOR
+---
+for(counter=initial expression; logical expr; change counter)
+statement
+
+
+To check equality of objects we use equals() method. equality of objects references, we use ==
+
+
+
+WHILE
+-----
+while(log-expr) {
+statements;
+}
+
+- Sentinel: end while loop, prompts user to enter -1 to end loop: continues until a specific value is entered.
+- break: stops the loop

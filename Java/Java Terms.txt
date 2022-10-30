@@ -1,0 +1,9 @@
+According to the explanation given in class, explain in your own words:
+1. Encapsulation: Hiding internal details
+2. Null: Nothing in existence
+3. Default constructor: method run on class initialization or object creation
+4. Signature of a method: structure on creation, with 3 things.
+5. Dot notation: used to access the method of an object
+6. Strongly typed language: vars are declared and given datatypes
+7. Method overloading: methods with the same names, but different parameters.
+

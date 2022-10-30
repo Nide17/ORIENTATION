@@ -1,0 +1,37 @@
+NOUNS & VERBS
+-------------
+- hasa: class has a data member => a class hasa atrributes
+- a Point hasa x, hasa y
+- names should be NOUNS
+- EG: x is a noun, so do y.
+- Do hard things later.
+- private access modifier, means you cannot access it outside the class.
+- Most getters don't have any arguments.
+- NB: instead of initializing variables, write a default constructor to do that. Also don't shadow. use different names.
+- Method overloading: two methods with same name, different nbr rguments or different classes (types) of arguments.
+	- This means, you cannot have two constructors for example 	all taking int arguments.
+
+Two getters
+-----------
+public int getPoints() {
+	return points;
+}
+
+public int getMaxPoints() {
+	return maxPoints;
+}
+
+
+TEST SCORE NOUNS
+----------------
+			Test Score (class) 
+- A test score hasa letter grade -yes -complicated -no
+			- how many you got right -yes
+			- how many you got wrong -no
+			- total number of points -yes
+			- bonus points -no
+			- number of questions -no
+
+VERBS: getPercentage, getLetterGrade, 
+
+

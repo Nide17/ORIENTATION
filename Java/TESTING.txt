@@ -1,0 +1,20 @@
+TESTING
+-------
+Test plan: example of inputs and expected outputs
+
+- Bounds: eg: Boundaries, eg against zero < or >: Testing grades boundary 90 and above=A
+-- Boundaries: these are the values where the output changes from one letter grade to another.
+
+- Branch: one part of the whole: testing only letter grades instead of the whole system
+-- The branch cases are the ones that test each letter grade with a value that is not a bounds test, for instance, 95.0.
+
+- Error: test for unexpected input: eg -92 or negative grade
+
+TEST PLAN: IS COMPOSED OF MORE TEST CASES
+TEST CASE: One chunk of testable items
+
+-- The Test plan tests the boundaries with test cases right at the boundary and also with test cases just above and just below the boundary values. 
+
+The expected output for FtoCent: (°F − 32) × 5/9 = 0°C
+--------------------------------------------------------
+- 

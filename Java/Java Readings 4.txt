@@ -1,0 +1,26 @@
+Read Chapter 6
+
+Skip, or skim these sections:
+
+Ch 6: 6.6, 6.7, 6.8, 6.10, 6.13
+
+In your own words, based on in-class explanations and those that are given in your book, give a brief definition of the following terms. For each, include the section and page number of where in the book the term is defined, or NA if it is not in your book.
+
+1. Shadowing: When a method has a local variable or parameter with a name similar to the instance variable or variable declared inside a class, that local one is said to shadow the instance variable in the method's body. (6.11, p.719)
+
+2. Command-line arguments: Those are arguments passed to the application from the command line via the main methods' array of Strings parameters, this is done when you are running the application. (7.14, p.859)
+
+3. Static method: This is a method that doesn't require creating an object to call it for performing its task. It's referred to as a class method and is called using the class name followed by a dot and method name. (6.3, p.666)
+
+4. Method overloading: It is a technique used to create methods with the same name, but with different parameters and or different functionalities. (6.12, p. 724)
+   
+5. public: It is an access modifier that indicates that a variable or method can be accessed outside its scope or available to the public. (6.4, p.674)
+    
+6. private: It is an access modifier that indicates that a variable or method can be accessed only by methods of the class in which it is declared. (3.2.1, p.302)
+    
+7. Pass by value: a copy of the argument's value is passed to the called method, and the value of the original variable used as the argument is not changed since the called method is working with its copy only. (7.9, p.823)
+
+8. Pass by reference: When an argument is passed to the method, the reference to the argument's value is passed. Therefore, the value of the argument can be changed inside the called method. (7.9, p.823)
+
+9. Instance method: A method declared inside the class, that can be accessed inside that class and requires creating an object to access it outside. It is typically called the non-static method. (6.5, p.681)
+

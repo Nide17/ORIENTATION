@@ -1,0 +1,88 @@
+PRACTICE READING SIGNATURES
+------------------------------------------
+1. Signature: Monster(String type, String name, double weight)     Class: Monster
+
+
+Call: Monster object = new Monster(); => This is a Default constructor, set instance variables to their default values.
+
+True answer: 
+String type = "Ghost";
+String name = "XYZ";
+double weight = 20.0;
+
+Monster m = new Monster(type, name, weight);
+
+
+2. Signature: public void eat(Rectangle r, int num)        Class: Monster
+
+Object: Monster object = new Monster();
+
+Call: object.eat(r, num); => The eat method is called using object name since it is a regular generic method.
+
+
+
+
+3. Signature: public void paint(Graphics g)         Class: Line 
+
+Object: Line object = new Line();
+
+Call: object.paint(g); => paint method is also regular, so we need an object to call it.
+
+True Answer: 
+
+public void paint(Graphics g) {
+
+// we need the Line object
+Line l = new Line();
+
+// no need for Graphics object bcz is given as g
+l.paint(g);
+}
+
+
+
+4. Signature: Line(Point p1, Point p2)         Class: Line 
+
+Call: Line object = new Line(); => we are are calling the default constructor here as instructed hence Line is the constructor.
+
+
+
+
+5. Signature: Line(int x1, int y1, int x2, int y2)        Class: Line 
+
+Call: Line object =  new Line(); => we are calling the default constructor here as instructed of the Line class to set the default values.
+
+
+
+
+6. Signature: public Receipt getMoney(double amount, String PIN)        Class: ATM 
+- returns a Receipt object
+- Receipt also is an object created inside getMoney() to be returned. no need to create a new Receipt
+
+Object: ATM object = new ATM(); // call the default
+
+Call: object.getMoney(amount, PIN); => we need to create an object of ATM in order to call getMoney method since it is a regular generic method of ATM class.
+
+True answer: object.getMoney(7000, "ABCDE");
+- We also need to store the value returned
+Receipt r = object.getMoney(7000, "ABCDE");
+
+
+7. Signature: public void swim(double speed)        Class: JellyFish 
+
+Object: JellyFish object = new JellyFish();
+
+Call: object.swim(speed); => To call swim method, we need to get the JellyFish object first hence the swim method is generic one.
+
+
+
+
+8. Signature: public static double refund(int year)        Class: TaxForm
+
+Call: TaxForm.refund(year); => refund is a static method, hence it is called by class name followed by dot and method name. 
+
+True Answer: double amount = refund(2022);
+- This is because the refund method is in the same class as the main method.
+
+
+

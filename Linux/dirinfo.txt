@@ -1,0 +1,10 @@
+echo -e "\n Information on directory abc: \n"
+
+echo -e "1. There are `ls | wc -l` files.\n"
+
+echo -e "2. The following files end in .c or .h: \n\n`find . -name "*.[ch]" | sort | cut -f2 -d/ |tr '\n
+' ' '`"
+
+echo -e "3. The following files have a digit in their name: \n\n`find . -name "*[0-9]*"| sort | cut -f2 -d/ | tr '\n' ' '`\n"
+
+echo -e "4. The following files are text files: \n\n`file 1st_try hello.c hello.mak`\n"

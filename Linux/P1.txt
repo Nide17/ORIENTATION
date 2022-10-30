@@ -1,0 +1,84 @@
+COMMANDS TO GET OUT!
+-------------------
+1. q: Used in more, and in man ... to quit
+2. Ctrl-C: Exit the command
+3. esc: Get out of vi insert mode
+4. Ctrl-D: Get out of commands that reads from input(cat, grep, ..)
+5. exit: Get out of a system
+
+DOT: Used as a reference
+spacebar: next screen
+
+BASIC COMMANDS
+--------------
+1. cat: Shows contents of file
+with -v: verbose: also show where (To display non-printable characters (for example, tabs, line feeds, carriage returns, etc.)) are
+cat > file : create file and put there standard input
+cat file1 >> file2 : copy contents of 1 and appends to 2
+2. cd -: takes you to dir prior to current wd same as "cd" only
+3. echo ~ same as echo $HOME : Shows home dir
+4. cal: calendar
+6. date: today's date
+5. cp: copy eg: cp abc def: copies contents of abc to def
+cp -r: copy recursively the dir and its content
+cp -rT: copy only the contents of dir to another dir
+cp dir/* dir2: copy all contents of dir to dir2
+
+7. file: shows the type -> dir or file
+8. ls -l: long listing with all details
+9. ls -a: all the files including hidden files: hidden starts with a dot
+10. mv: rename file
+11. rm: remove permanently
+12. rmdir: remove empty dir and rm -r: to remove non empty dirs
+13. who: who is logged in
+14. diff: determines if files are different
+15. wc: word counter
+- wc -l: count number of lines; wc -m: nbr of chars; wc -w: nbr of words
+
+GO HOME
+-------
+1. cd ~
+2. cd $HOME
+3. cd
+
+- Redirection sign: >
+eg: echo hi there > abc: write hi there into abc file
+
+- Linux doesn't care about extensions
+- root directory: is top most level directory (/): List its content-> ls /
+- root user: can do anything he wants, using sudo! superuser do
+
+PATHS
+-----
+1. Fully Qualified or  Absolute Pathname: starts with a slash (at the root) at the beginning: /home/parmenin/play
+- Works no matter where you are bcz you use full path from the root
+
+2. Relative paths: No slash. Paths that are relative to the current directory
+
+1.7 ENVIRONMENT VARIBALES
+-------------------------
+export VAR="Hello"
+->export: makes the var available to other shells
+
+echo VAR => Hello
+
+- bash: used to run a subshell
+
+$PATH: List all dirs that the shell will search for commands when you try to run a command
+
+- type command: shows what cmd is 
+- which cmd: place where a cmd is located
+- whence cmd: ?
+- whereis cmd: search in a file: use slash the name: /nide
+- env: show all environment vars
+
+
+1.8 HOME VARIABLE
+-----------------
+To go home:
+- cd
+- cd $HOME
+- cd ~
+
+- /home : home directory above everybody
+- ~: login directory for current user
